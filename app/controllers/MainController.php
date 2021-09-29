@@ -50,6 +50,12 @@ class MainController extends Controller
                 'min' => 10,
                 'max' => 10000
             ],
+            'image' => [
+                'required' => true,
+            ],
+            'category' => [
+                'required' => true,
+            ],
         ]);
 
         if (!$valid) {
@@ -89,6 +95,12 @@ class MainController extends Controller
                 'required' => true,
                 'min' => 10,
                 'max' => 10000
+            ],
+            'image' => [
+                'required' => true,
+            ],
+            'category' => [
+                'required' => true,
             ],
         ]);
         if (!$valid) {

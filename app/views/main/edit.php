@@ -14,7 +14,7 @@
                                 </div>
                                 <div class="col-6 mb-3">
                                     <label for="image" class="form-label">Ссылка на изображение</label>
-                                    <input type="text" class="form-control" name="image" id="image" value="<?=$data['image'] ?? '';?>">
+                                    <input type="text" class="form-control" name="image" id="image" value="<?=$data['image'] ?? '';?>" required>
                                 </div>
                             </div>
                             <div class="row">
@@ -26,7 +26,7 @@
                             <div class="row">
                                 <div class="col-12 mb-3">
                                     <label for="full_description" class="form-label">Детальное описание</label>
-                                    <textarea class="form-control" id="full_description" name="full_description" minlength="1" rows="15"><?=$data['detail_description'] ?? '';?></textarea>
+                                    <textarea class="form-control" id="full_description" name="full_description" minlength="1" rows="15" required><?=$data['detail_description'] ?? '';?></textarea>
                                 </div>
                             </div>
                             <div class="row">
